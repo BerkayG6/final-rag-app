@@ -1,0 +1,27 @@
+# Ortam değişkenleri (API anahtarların burada!)
+.env
+
+# Virtual environment
+nlp_course_env/
+venv/
+env/
+
+# Vektör veritabanı (büyük, yeniden oluşturulabilir)
+chroma_db/
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
