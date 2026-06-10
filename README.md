@@ -96,26 +96,24 @@ streamlit run app.py
 
 Tarayıcında `http://localhost:8501` adresine git.
 
-## 🔧 Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 | Katman | Teknoloji |
 |--------|-----------|
 | Embedding | sentence-transformers (BGE-M3) |
 | Vektör DB | ChromaDB |
 | Keyword Search | BM25 |
-| LLM | Groq API (Llama / Mixtral) |
+| LLM | Groq API (Llama) |
 | Arayüz | Streamlit |
-| Fine-tuning | PEFT / LoRA (Faz 2) |
 
-## 📖 Nasıl Çalışır?
+
+## Nasıl Çalışır?
 
 1. **Ingestion:** PDF'ler yüklenir, chunklara bölünür ve embedding vektörlerine dönüştürülür, ChromaDB'ye kaydedilir.
 2. **Retrieval:** Soru geldiğinde hem semantik hem BM25 araması yapılır, sonuçlar reranker ile sıralanır.
 3. **Generation:** En iyi chunk'lar LLM'e context olarak verilir, kaynak gösterilerek cevap üretilir.
 
-## 🗺️ Yol Haritası
 
-Bu proje [8 haftalık NLP öğrenme planının](https://github.com/KULLANICI_ADIN/NLP-101) bitirme projesidir.
 
 ---
 
